@@ -1,0 +1,146 @@
+.customers-page {
+    padding: 30px;
+}
+
+.customers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.customers-header h1 {
+    margin: 0;
+}
+
+.add-customer-button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.add-customer-button:hover {
+    background: #1d4ed8;
+}
+
+.customer-form-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.customer-form-card h2 {
+    margin-top: 0;
+}
+
+.customer-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.customer-form-grid input,
+.customer-form-card textarea {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.customer-form-card textarea {
+    width: 100%;
+    margin-top: 15px;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.save-customer-button {
+    margin-top: 15px;
+    background: #16a34a;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.form-error {
+    color: #dc2626;
+}
+
+.customer-search {
+    margin-bottom: 20px;
+}
+
+.customer-search form {
+    display: flex;
+    gap: 8px;
+}
+
+.customer-search input,
+.customer-search button {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+}
+
+.customer-search button {
+    background: #374151;
+    color: white;
+    cursor: pointer;
+}
+
+.customers-page table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.customers-page th,
+.customers-page td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.customers-page th {
+    background: #f3f4f6;
+}
+
+.customer-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.edit-button,
+.delete-button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-button {
+    background: #2563eb;
+}
+
+.edit-button:hover {
+    background: #1d4ed8;
+}
+
+.delete-button {
+    background: #dc2626;
+}
+
+.delete-button:hover {
+    background: #b91c1c;
+}

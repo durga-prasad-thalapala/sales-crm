@@ -1,0 +1,158 @@
+
+.deals-page {
+    padding: 30px;
+}
+
+.deals-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.deals-header h1 {
+    margin: 0;
+}
+
+.add-deal-button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.add-deal-button:hover {
+    background: #1d4ed8;
+}
+
+.deal-form-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.deal-form-card h2 {
+    margin-top: 0;
+}
+
+.deal-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.deal-form-grid input,
+.deal-form-grid select,
+.deal-form-card textarea {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.deal-form-card textarea {
+    margin-top: 15px;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.save-deal-button {
+    margin-top: 15px;
+    background: #16a34a;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.deal-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.deal-filters form {
+    display: flex;
+    gap: 8px;
+}
+
+.deal-filters input,
+.deal-filters select,
+.deal-filters button {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+}
+
+.deal-filters button {
+    background: #374151;
+    color: white;
+    cursor: pointer;
+}
+
+.deals-page table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.deals-page th,
+.deals-page td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.deals-page th {
+    background: #f3f4f6;
+}
+
+.deals-page td button {
+    margin-right: 8px;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deals-page td button:first-child {
+    background: #2563eb;
+    color: white;
+}
+
+.deals-page td button:last-child {
+    background: #dc2626;
+    color: white;
+}
+
+.form-error {
+    color: #dc2626;
+}
+
+@media (max-width: 768px) {
+    .deals-page {
+        padding: 16px;
+    }
+
+    .deal-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .deal-filters {
+        flex-wrap: wrap;
+    }
+
+    .deals-page table {
+        display: block;
+        overflow-x: auto;
+    }
+}

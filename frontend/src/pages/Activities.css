@@ -1,0 +1,168 @@
+
+.activities-page {
+    padding: 30px;
+}
+
+.activities-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.activities-header h1 {
+    margin: 0;
+}
+
+.add-activity-button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.add-activity-button:hover {
+    background: #1d4ed8;
+}
+
+.activity-form-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.activity-form-card h2 {
+    margin-top: 0;
+}
+
+.activity-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.activity-form-grid input,
+.activity-form-grid select,
+.activity-form-card textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.activity-form-card textarea {
+    margin-top: 15px;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.activity-completed-field {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.save-activity-button {
+    margin-top: 15px;
+    background: #16a34a;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.activity-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.activity-filters form {
+    display: flex;
+    gap: 8px;
+}
+
+.activity-filters input,
+.activity-filters select,
+.activity-filters button {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+}
+
+.activity-filters button {
+    background: #374151;
+    color: white;
+    cursor: pointer;
+}
+
+.activities-page table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.activities-page th,
+.activities-page td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.activities-page th {
+    background: #f3f4f6;
+}
+
+.activities-page td button {
+    margin-right: 6px;
+    margin-bottom: 4px;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.activities-page td button:first-child {
+    background: #16a34a;
+    color: white;
+}
+
+.activities-page td button:nth-child(2) {
+    background: #2563eb;
+    color: white;
+}
+
+.activities-page td button:last-child {
+    background: #dc2626;
+    color: white;
+}
+
+.activities-page .form-error {
+    color: #dc2626;
+}
+
+@media (max-width: 768px) {
+    .activities-page {
+        padding: 16px;
+    }
+
+    .activity-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .activities-page table {
+        display: block;
+        overflow-x: auto;
+    }
+}
