@@ -57,7 +57,7 @@ sales-crm/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/durgaprasadthalapala/sales-crm.git
+   https://github.com/durga-prasad-thalapala/sales-crm.git
    cd sales-crm
    ```
 
